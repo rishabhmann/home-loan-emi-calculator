@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --brand-dark: #07004d;
+  --brand-light: #e4fde1;
+  --background: #07004d;
+  --foreground: #e4fde1;
+  --brand-muted: rgba(228, 253, 225, 0.65);
+  --brand-subtle: rgba(228, 253, 225, 0.45);
+  --brand-surface: rgba(228, 253, 225, 0.08);
+  --brand-surface-strong: rgba(228, 253, 225, 0.12);
+  --brand-border: rgba(228, 253, 225, 0.18);
+  --brand-border-strong: rgba(228, 253, 225, 0.28);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: #07004d;
+  --color-accent: #e4fde1;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
